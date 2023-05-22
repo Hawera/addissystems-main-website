@@ -6,6 +6,7 @@ import posimage from "../image/pos service with bg-01.png";
 import erpimage from "../image/ERP-image.png";
 import ServiceBox from "../Components/ServiceBox";
 import Moto from "../Components/Moto";
+import Sponsors from "../Components/Sponsors";
 
 const Home = () => {
   return (
@@ -52,6 +53,19 @@ const Home = () => {
         </div>
       </div>
       <Moto />
+      <Heading
+        head="Learn More About AddisSystems?"
+        para="Feel free to ask us on..."
+      />
+      <div className="text-center text-lg -mt-8 mb-8">
+        <Button
+          text="Contact Us"
+          py={8}
+          width={180}
+          bgHover={"hover:bg-addisblue"}
+        />
+      </div>
+      <Sponsors />
     </main>
   );
 };

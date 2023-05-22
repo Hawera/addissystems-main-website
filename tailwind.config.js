@@ -10,6 +10,7 @@ module.exports = {
         addispink: "#d71a62",
         pinkhover: "#CE346F",
         white: "#ffffff",
+        addisbg: "#454262",
       },
       screens: {
         ssm: "440px",

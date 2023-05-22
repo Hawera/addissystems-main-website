@@ -99,11 +99,11 @@ const Footer = () => {
       </div>
       <hr className="mt-8 w-4/5 mx-auto opacity-50 border-addispink" />
       <div className=" text-center mt-6 ">
-        <p className="">
+        <p className=" opacity-70">
           Copyright &copy; {date.getFullYear()} All right reserved.
         </p>
         <p className="">
-          Powered by{" "}
+          <span className=" opacity-70">Powered by</span>{" "}
           <span className="text-addispink opacity-100 hover:opacity-95 duration-300 cursor-pointer">
             AddisSystems plc.
           </span>

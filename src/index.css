@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
+  body {
+    /* background-color: ; */
+  }
   .banner {
-    max-height: calc(100vh - 64px);
+    height: calc(100vh - 64px);
+    max-height: 920px;
   }
   @media screen and (max-width: 1060px) and (min-width: 768px) {
     .heading-break {
