@@ -61,7 +61,7 @@ const Submitted = () => {
             <label className="mt-3" htmlFor="comment">
               Any Comment/suggestion
               <textarea
-                className="w-full max-w-[500px] rounded indent-2 py-2 max-h-60 "
+                className="w-full max-w-[500px] rounded indent-2 py-2 max-h-60 outline-addisblue"
                 placeholder="leave us comment"
                 rows={3}
               />

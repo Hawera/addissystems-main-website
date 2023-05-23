@@ -10,6 +10,19 @@
     height: calc(100vh - 64px);
     max-height: 920px;
   }
+
+  .slide {
+    height: 0px;
+    overflow: hidden;
+    transform: translateY(-5px);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .rotate {
+    transform: rotate(-180deg);
+  }
+
   @media screen and (max-width: 1060px) and (min-width: 768px) {
     .heading-break {
       display: block;

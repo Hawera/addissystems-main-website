@@ -11,7 +11,7 @@ const Heading = ({ head, para }) => {
 
 Heading.defaultProps = {
   // head: "Default Heading",
-  para: "lorem ipsum default paragraph here, please insert your content here!",
+  // para: "lorem ipsum default paragraph here, please insert your content here!",
 };
 
 export default Heading;
