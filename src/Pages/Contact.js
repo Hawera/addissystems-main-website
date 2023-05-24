@@ -6,13 +6,20 @@ import flag from "../image/1x/ethiopian_flag.svg";
 import Banner from "../Components/Banner";
 import Heading from "../Components/Heading";
 import Button from "../Components/Button";
+import Moto from "../Components/Moto";
+import bannerImage from "../image/contact-us.jpg";
 
 const Contact = () => {
   return (
-    <main className="">
-      <Banner header={"Contact us"} />
+    <main className=" relative">
+      <Banner
+        bannerImage={bannerImage}
+        header={"Contact us"}
+        subtitle={"Solve All Your Digital Transaction Needs."}
+      />
       <Heading
-        head={"Get in Contact with us"}
+        head={"Get in Contact"}
+        headtwo={"with us"}
         para={"we will get back to you as soon as possible"}
       />
       <div className=" max-w-7xl mx-auto flex flex-col items-center md:flex-row md:items-stretch justify-center px-1 ssm:px-4  sm:px-1 gap-4 mb-10 ">
@@ -109,14 +116,15 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Heading head={"We are located"} />
+      <Heading head={"We are"} headtwo={"located"} />
       <div className=" bg-slate-100">
         <iframe
           title="google map"
-          className=" w-full h-[350px] -mt-4 mb-12 shadow-lg border-primaryColor"
+          className=" w-full h-[450px] -mt-4 mb-12 shadow-lg border-primaryColor"
           src="https://www.google.com/maps/embed/v1/place?q=Efrata+Building+|+Bambis+|+ኤፍራታ+ህንጻ+|+ባምቢስ,+Equatorial+Guinea+Street,+Addis+Ababa,+Ethiopia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
         ></iframe>
       </div>
+      <Moto />
     </main>
   );
 };

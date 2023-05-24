@@ -6,8 +6,10 @@ const Feature = ({ feature }) => {
       <div className=" w-10 h-10 bg-addispink ">
         {/* <img src="" alt="" /> */}
       </div>
-      <h2 className=" text-base sm:text-lg mt-4 mb-2 ">{feature.title}</h2>
-      <p className=" text-sm sm:text-base font-light">{feature.paragraph}</p>
+      <h2 className=" text-base font-medium sm:text-lg mt-4 mb-2 ">
+        {feature.title}
+      </h2>
+      <p className=" text-sm sm:text-base ">{feature.paragraph}</p>
     </div>
   );
 };

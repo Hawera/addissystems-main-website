@@ -156,7 +156,7 @@ export const faqs = [
           "By integrating the addispay gateway with merchant site, we offer platform that enables customer to make their payment online through debit card, Credit Card, mobile money and any other payment instruments. Our platform also aggregates the daily sales and receipts of the merchant. The merchant can also easily reconcile its daily sales and receipt against bank account.",
       },
       {
-        id: "addis",
+        id: "addis6",
         question: "How fast can I access addisay services?",
         answer: "Please visit our website www.aaddispay.co",
       },

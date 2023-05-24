@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className=" bg-black pt-12 pb-8 text-white">
+    <footer className=" bg-black [#454262] black pt-12 pb-8 text-white">
       <div className="container max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-7 gap-x-1 px-6">
         <ul className="">
           <h4 className=" font-semibold text-lg text-addispink">About us</h4>
@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="mt-2">
             <h4 className="font-semibold text-base">Get in touch</h4>
             <div className="flex gap-4 mt-1">
-              <FaFacebookF className="text-addispink hover:text-white hover:scale-125 duration-300" />
+              <FaFacebookF className="hover:text-addispink text-white hover:scale-125 duration-300" />
               <FaTwitter className="text-addispink hover:text-white hover:scale-125 duration-300" />
               <FaLinkedinIn className="text-addispink hover:text-white hover:scale-125 duration-300" />
               <FaInstagram className="text-addispink hover:text-white hover:scale-125 duration-300" />

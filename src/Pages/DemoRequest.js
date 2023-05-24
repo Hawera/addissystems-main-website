@@ -57,7 +57,7 @@ const DemoRequest = () => {
                   <span className="ml-1 text-base">+251</span>
                   <input
                     className="indent-2 py-3 rounde w-full outline-none"
-                    type="number"
+                    type="tel"
                     placeholder="Phone Number"
                   />
                 </div>

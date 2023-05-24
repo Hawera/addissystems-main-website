@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ text, width, py, bg, color, bgHover, textHover }) => {
   return (
     <button
-      className={` ${bg} text-${color} text-center ${bgHover} hover:text-${textHover} rounded-[4px] duration-300`}
+      className={` ${bg} text-${color} text-center ${bgHover} hover:text-${textHover} rounded-[4px] duration-500`}
       style={{
         width: `${width}px`,
         padding: `${py}px 0`,

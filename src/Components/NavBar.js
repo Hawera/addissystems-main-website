@@ -77,9 +77,9 @@ const NavBar = () => {
             </ul>
           </li>
           <li className="relative group flex items-end flex-col mmd:block ml-3">
-            <span className=" text-sm flex items-center hover:text-addispink">
+            <span className=" text-xs flex items-center hover:text-addispink">
               Eng{" "}
-              <span className="text-sm group-hover:-rotate-180 duration-500 ">
+              <span className="text-xs group-hover:-rotate-180 duration-500 ">
                 <FaCaretDown />
               </span>
             </span>{" "}
@@ -87,8 +87,7 @@ const NavBar = () => {
               <li className="hover:text-addispink float-right">Amharic</li>
             </ul>
           </li>
-          <Link to="">
-            {" "}
+          <a href="https://admin.addissystems.et/">
             <Button
               text="Log in"
               py={6}
@@ -96,7 +95,7 @@ const NavBar = () => {
               bgHover="hover:bg-addisblue"
               textHover="text-addispink"
             />
-          </Link>{" "}
+          </a>
           <div className="absolute cursor-default text-sm font-normal bottom-2 right-1/2 translate-x-1/2 mmd:hidden block">
             <p className="text-addispink">
               Addis<span className="text-addisblue">systems</span>

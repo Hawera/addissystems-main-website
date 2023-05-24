@@ -35,7 +35,8 @@ const Service = ({ heading, title, paragraph, heroImage }) => {
         heroImage={heroImage}
       />
       <Heading
-        head={"ADDIS B2B/POS Service Integration Can Benefit Business"}
+        head={"ADDIS B2B/POS Service Integration Can"}
+        headtwo={"Benefit Business"}
         para={
           "Discover the advantages of using B2B/POS Service integration to digitize information flowing through business ecosystems."
         }
@@ -47,7 +48,8 @@ const Service = ({ heading, title, paragraph, heroImage }) => {
       </div>
       <Moto />
       <Heading
-        head="Learn More About AddisSystems?"
+        head="Learn More About"
+        headtwo={"AddisSystems?"}
         para="Feel free to ask us on..."
       />
       <div className="text-center text-lg -mt-8 mb-8">

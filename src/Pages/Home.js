@@ -3,7 +3,7 @@ import Hero from "../Components/Hero";
 import Heading from "../Components/Heading";
 import Button from "../Components/Button";
 import posimage from "../image/pos service with bg-01.png";
-import erpimage from "../image/ERP-image.png";
+import erpimage from "../image/ERP3-03.png";
 import ServiceBox from "../Components/ServiceBox";
 import Moto from "../Components/Moto";
 import Sponsors from "../Components/Sponsors";
@@ -13,7 +13,8 @@ const Home = () => {
     <main className="">
       <Hero />
       <Heading
-        head="why work with us?"
+        head="why work"
+        headtwo={"with us?"}
         para="Lorem ipsum dolor sit amet consectetur. Mi mollis at dignissim orci et
       mattis consequat euismod nec. Egestas augue in interdum eu massa
       malesuada feugiat placerat tellus. Diam lorem sed facilisis ac
@@ -23,7 +24,7 @@ const Home = () => {
       semper scelerisque quisque consequat tellus pellentesque. Tortor vitae
       nunc lectus elementum pellentesque ultrices. Proin sed diam nulla."
       />
-      <Heading head="service we provide" />
+      <Heading head="service we " headtwo={"provide"} />
       <div className=" grid gap-y-20 sm:px-4 lg:px-2">
         <div className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-x-4 lg:gap-x-32">
           <div className="w-[90%] md:w-1/2 max-w-[550px]">
@@ -39,8 +40,12 @@ const Home = () => {
           />
         </div>
         <div className=" max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center justify-between gap-x-4 lg:gap-x-10 ">
-          <div className="w-[90%] md:w-1/2 max-w-[550px]">
-            <img src={erpimage} alt="pos service illustration" />
+          <div className="w-[90%] md:w-1/2 max-w-[550px] ">
+            <img
+              className=" h-full max-h-[450px] "
+              src={erpimage}
+              alt="pos service illustration"
+            />
           </div>
           <ServiceBox
             head="ERP service"
@@ -54,8 +59,9 @@ const Home = () => {
       </div>
       <Moto />
       <Heading
-        head="Learn More About AddisSystems?"
-        para="Feel free to ask us on..."
+        head="Learn More About"
+        headtwo={"AddisSystems?"}
+        para="Feel free to ask us"
       />
       <div className="text-center text-lg -mt-8 mb-8">
         <Button
