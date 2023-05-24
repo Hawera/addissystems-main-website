@@ -15,6 +15,7 @@ module.exports = {
       screens: {
         ssm: "440px",
         mmd: "900px",
+        mdm: "1080px",
       },
 
       animation: {
