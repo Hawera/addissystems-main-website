@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const MainService = ({ heading, title, paragraph, btntext, heroImage }) => {
@@ -13,13 +14,15 @@ const MainService = ({ heading, title, paragraph, btntext, heroImage }) => {
             <p className="text-slate-300">{title}</p>
             <p className="text-slate-200 font-light mt-4">{paragraph}</p>
             <div className=" mt-7 sm:mb-12 md:mb-0 hidden md:block">
-              <Button
-                text={btntext}
-                py={12}
-                width={210}
-                bgHover={"hover:bg-white"}
-                textHover={"addispink"}
-              />
+              <Link to="demo-request">
+                <Button
+                  text={"Demo request"}
+                  py={12}
+                  width={210}
+                  bgHover={"hover:bg-white"}
+                  textHover={"addispink"}
+                />
+              </Link>
             </div>
           </div>
           <div className=" w-[95%] max-w-[400px] sm:max-w-[70%] md:max-w-[60%]  border-addispink mt-4 sm:my-0">
@@ -31,13 +34,15 @@ const MainService = ({ heading, title, paragraph, btntext, heroImage }) => {
           </div>
 
           <div className="mb-12 md:hidden">
-            <Button
-              text={btntext}
-              py={12}
-              width={210}
-              bgHover={"hover:bg-white"}
-              textHover={"addispink"}
-            />
+            <Link to="demo-request">
+              <Button
+                text={"Demo request"}
+                py={12}
+                width={210}
+                bgHover={"hover:bg-white"}
+                textHover={"addispink"}
+              />
+            </Link>
           </div>
         </div>
       </header>

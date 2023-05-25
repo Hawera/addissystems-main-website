@@ -7,6 +7,7 @@ import Moto from "../Components/Moto";
 import Button from "../Components/Button";
 import Sponsors from "../Components/Sponsors";
 import Feature from "../Components/Feature";
+import LearnMore from "../Components/LearnMore";
 
 const Service = ({ heading, title, paragraph, heroImage }) => {
   // const [data, setData] = useState([]);
@@ -31,7 +32,6 @@ const Service = ({ heading, title, paragraph, heroImage }) => {
         heading={heading}
         title={title}
         paragraph={paragraph}
-        btntext={"Demo Request"}
         heroImage={heroImage}
       />
       <Heading
@@ -47,19 +47,7 @@ const Service = ({ heading, title, paragraph, heroImage }) => {
         ))}
       </div>
       <Moto />
-      <Heading
-        head="Learn More About"
-        headtwo={"AddisSystems?"}
-        para="Feel free to ask us on..."
-      />
-      <div className="text-center text-lg -mt-8 mb-8">
-        <Button
-          text="Contact Us"
-          py={8}
-          width={180}
-          bgHover={"hover:bg-addisblue"}
-        />
-      </div>
+      <LearnMore />
       <Sponsors />
     </main>
   );

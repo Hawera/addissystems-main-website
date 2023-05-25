@@ -11,6 +11,7 @@ module.exports = {
         pinkhover: "#CE346F",
         white: "#ffffff",
         addisbg: "#454262",
+        addishover: "#F60B65",
       },
       screens: {
         ssm: "440px",

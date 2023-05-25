@@ -5,6 +5,7 @@ import FaqList from "../Components/FaqList";
 import Button from "../Components/Button";
 import { faqs } from "../data";
 import faqbanner from "../image/faq-banner-01-01.jpg";
+import LearnMore from "../Components/LearnMore";
 
 const Faq = () => {
   const handleSlide = (id) => {
@@ -30,19 +31,7 @@ const Faq = () => {
         <div className=" max-w-[850px] mx-auto px-2 mb-12">
           <FaqList faqData={faqs} handleSlide={handleSlide} />
         </div>
-        <Heading
-          head="Learn More About"
-          headtwo={"AddisSystems?"}
-          para="Feel free to ask us"
-        />
-        <div className="text-center text-lg -mt-8 mb-8">
-          <Button
-            text="Contact Us"
-            py={8}
-            width={180}
-            bgHover={"hover:bg-addisblue"}
-          />
-        </div>
+        <LearnMore />
       </div>
     </main>
   );

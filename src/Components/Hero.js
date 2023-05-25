@@ -14,7 +14,7 @@ const Hero = () => {
             Ethiopia and beyond.
           </h1>
           <p className="text-slate-300">
-            Lorem ipsum dolor sit amet consectetur. Amet purus risus.
+            Solve All Your Digital Transaction Needs
           </p>
           <div className=" mt-7 sm:mb-12 md:mb-0">
             <Link to="demo-request">

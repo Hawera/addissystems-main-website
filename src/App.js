@@ -52,7 +52,7 @@ function App() {
         <Route path="user-guide" element={<UserGuide />} />
         <Route path="faq" element={<Faq />} />
         <Route path="help" element={<Help />} />
-        <Route path="demo-request" element={<DemoRequest />} />
+        <Route exact path="demo-request" element={<DemoRequest />} />
         <Route exact path="demo-request/submitted" element={<Submitted />} />
       </Route>
     </Routes>

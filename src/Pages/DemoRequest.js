@@ -6,6 +6,7 @@ import Banner from "../Components/Banner";
 import flag from "../image/1x/ethiopian_flag.svg";
 import Button from "../Components/Button";
 import Sponsors from "../Components/Sponsors";
+import LearnMore from "../Components/LearnMore";
 
 const DemoRequest = () => {
   const [formData, setFormData] = useState({
@@ -126,18 +127,7 @@ const DemoRequest = () => {
           </form>
         </div>
 
-        <Heading
-          head="Learn More About AddisSystems?"
-          para="Feel free to ask us on..."
-        />
-        <div className="text-center text-lg -mt-8 mb-8">
-          <Button
-            text="Contact Us"
-            py={8}
-            width={180}
-            bgHover={"hover:bg-addisblue"}
-          />
-        </div>
+        <LearnMore />
         <Sponsors />
       </div>
     </main>

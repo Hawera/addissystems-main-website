@@ -124,7 +124,7 @@ const NavBar = () => {
                 text="Log in"
                 py={6}
                 width={120}
-                bgHover="hover:bg-addisblue"
+                bgHover="hover:bg-addishover"
                 textHover="text-addispink"
               />
             </a>
