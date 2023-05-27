@@ -9,6 +9,7 @@ import {
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { BiChevronRight } from "react-icons/bi";
 
 const Footer = () => {
   const date = new Date();
@@ -17,9 +18,16 @@ const Footer = () => {
       <div className="container max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-7 gap-x-1 px-6">
         <ul className="">
           <h4 className=" font-semibold text-lg text-addispink">About us</h4>
-          <li className=" font-light text-base pr-20 hover:text-addispink duration-300 w-fit">
-            <Link to="contact">
-              Addis Ababa Megenagna to 22 road, Efrata building Fourth Floor
+          <li className=" font-light text-base pr-20 text-slate-50 w-fit">
+            Addis Ababa <br />
+            Megenagna to 22 road <br />
+            Efrata building 4<sup>th</sup> Floor
+            <br />
+            <Link
+              to="contact"
+              className=" group flex items-center text-addispink duration-500  hover:text-slate-200"
+            >
+              <BiChevronRight className="text-xl " /> See on map
             </Link>
           </li>
           <div className="mt-2">

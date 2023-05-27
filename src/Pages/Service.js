@@ -46,6 +46,7 @@ const Service = ({
 
   return (
     <main className="">
+      {/* Banner with Heading and Button  */}
       <header className=" relative">
         <div
           className=" max-w-7xl mx-auto h-60 sm:h-72 flex items-center justify-center sm:justify-start px-4 text-center sm:text-left "
@@ -73,12 +74,15 @@ const Service = ({
           </div>
         </div>
       </header>
+
       {/* <MainService
         heading={heading}
         title={title}
         // paragraph={paragraph}
         heroImage={heroImage}
       /> */}
+
+      {/* Body Title with Color  */}
       <div className="text-center my-12 max-w-7xl mx-auto px-4 lg:px-32 md:px-20 sm:px-8 ">
         <h1 className=" text-2xl sm:text-3xl uppercase font-medium">
           ADDIS{" "}
@@ -105,15 +109,7 @@ const Service = ({
             </p>
           </div>
         </section>
-        {/* <p className="text-sm md:text-base text-justify indent-8 ">
-          {paragraph}
-        </p> */}
       </div>
-      {/* <Heading
-        head={`ADDIS ${heading} Service Integration Can`}
-        headtwo={"Benefit Business"}
-        para={paragraph}
-      /> */}
       <div className="max-w-6xl px-2 sm:px-0 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center  gap-5  ">
         <h2 className=" mt-8 mb-2 text-xl sm:text-2xl uppercase font-medium col-span-full">
           Benefits to the business{" "}

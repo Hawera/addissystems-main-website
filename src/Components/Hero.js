@@ -7,9 +7,9 @@ import ButtonChevron from "./ButtonChevron";
 const Hero = () => {
   return (
     <header className=" bg-[#454262] px-4">
-      <div className=" sm:banner h-screen max-h-[678px] sm:h-ful sm:max-[1280px] max-w-7xl mx-auto flex flex-col-reverse  md:flex-row md:justify-between items-center  border-addispink overflow-hidden justify-end sm:gap-y-12 md:gap-0 sm:justify-center ">
+      <div className=" min-h-[600px] banner max-h-[] md:min-h-[650px] md:max-h-[800px] max-w-7xl mx-auto flex flex-col-reverse  md:flex-row md:justify-between items-center  overflow-hidden justify-center py-10 md:py-0 sm:gap-y-20 md:gap-0 sm:justify-end ">
         <div className=" w-full md:w-1/2 text-center md:text-left  border-addispink px-8 md:px-0 sm:px-24">
-          <h1 className=" text-white text-2xl md:text-4xl font-semibold uppercase">
+          <h1 className=" text-white text-2xl lg:text-5xl md:text-4xl font-semibold uppercase">
             Facilitating <br className="heading-break hidden " />{" "}
             <span className="text-addispink font-bold">e-commerce</span> in
             Ethiopia and beyond.
@@ -23,12 +23,8 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className=" w-[95%] max-w-[400px] sm:max-w-[70%] md:max-w-[60%]  border-addispink my-4 sm:my-0">
-          <img
-            className=" w-full h-full object-contain"
-            src={heroImage}
-            alt=""
-          />
+        <div className=" w-[95%] max-w-[400px] sm:max-w-[70%] md:max-w-[60%]  border-addispink my-4 -mt-20 sm:my-0">
+          <img className="" src={heroImage} alt="" />
         </div>
       </div>
     </header>

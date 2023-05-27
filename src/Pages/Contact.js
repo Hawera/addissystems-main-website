@@ -8,6 +8,7 @@ import Heading from "../Components/Heading";
 import Button from "../Components/Button";
 import Moto from "../Components/Moto";
 import bannerImage from "../image/contact-us.jpg";
+import Sponsors from "../Components/Sponsors";
 
 const Contact = () => {
   return (
@@ -34,17 +35,21 @@ const Contact = () => {
                 tempor nibh. Egestas facilisi scelerisque.
               </p>
             </div>
+
+            {/* Contact Section  */}
             <div className="flex flex-col gap-y-2">
-              <div className=" group flex items-start hover:text-addispink duration-300 hover:-translate-y-1">
+              <div className=" group flex items-start ">
                 <a className="flex" href="tel:+251116684243">
-                  <div className="group-hover:animate-bounce text-addispink group-hover:text-black text-xl mr-2 mt-1">
+                  <div className=" text-addispink text-xl mr-2 mt-1">
                     <BsFillTelephoneFill />
                   </div>
-                  <h3 className=" text-xl font-semibold">+251 11 66 84243</h3>
+                  <h3 className=" text-xl font-semibold hover:text-addispink duration-300 hover:-translate-y-1">
+                    +251 11 66 84243
+                  </h3>
                 </a>
               </div>
               <div className=" group flex items-start ">
-                <div className="group-hover:animate-bounce text-addispink text-2xl mr-2 mt-2">
+                <div className=" text-addispink text-2xl mr-2 mt-2">
                   <MdEmail />
                 </div>
                 <div className="">
@@ -60,19 +65,21 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              <div className=" group flex items-start hover:text-addispink duration-300 hover:-translate-y-1">
-                <div className="group-hover:animate-bounce text-addispink text-2xl mr-2 mt-1">
+              <div className=" group flex items-start ">
+                <div className=" text-addispink text-2xl mr-2 mt-1">
                   <ImLocation2 />
                 </div>
-                <h3 className=" text-lg font-semibold">
+                <h3 className=" text-lg font-semibold hover:text-addispink duration-300 hover:-translate-y-1">
                   Megenagna To 22 Road , Efrata Building Fourth Floor
                 </h3>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Form Section  */}
         <div className="email-us-conatiner w-full max-w-[500px] bg-slate-200 px-2 sm:px-8 py-6 ">
-          <h3 className=" text-2xl font-semibold mb-6">Contact</h3>
+          <h3 className=" text-2xl font-semibold mb-6">Email us</h3>
           <form className=" flex flex-col gap-y-3">
             <input
               className=" py-2 rounded outline-addisblue indent-2"
@@ -125,6 +132,7 @@ const Contact = () => {
         ></iframe>
       </div>
       <Moto />
+      <Sponsors />
     </main>
   );
 };

@@ -11,7 +11,7 @@ import { GiUpgrade, GiDuality, GiReceiveMoney } from "react-icons/gi";
 import { TbFileInvoice } from "react-icons/tb";
 import { AiOutlineReconciliation, AiOutlineAreaChart } from "react-icons/ai";
 import { GiMoneyStack } from "react-icons/gi";
-import { BsShieldLock, BsBuildingFillGear } from "react-icons/bs";
+import { BsShieldLock, BsBuildingFillGear, BsReceipt } from "react-icons/bs";
 import { SlDirections, SlDirection } from "react-icons/sl";
 import { MdGroups2 } from "react-icons/md";
 
@@ -111,7 +111,7 @@ export const features = {
         title: "Transforms tax compliance",
         paragraph:
           "BI services can helps tax authority to identify non-compliant taxpayers and take appropriate action.",
-        icon: <GiReceiveMoney />,
+        icon: <BsReceipt />,
       },
       {
         title: "Increased revenue",

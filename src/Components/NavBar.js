@@ -69,17 +69,18 @@ const NavBar = () => {
                   </span>
                 </span>{" "}
               </Link>
-              <ul className="hidden group-hover:flex flex-col items-end mdm:items-start gap-y-1 mdm:absolute text-sm bg-white min-w-[150px] p-3 shadow-md">
-                <li className="hover:text-addispink">
+
+              <ul className="h-0 px-3 overflow-hidden rounded-b-md group-hover:h-40 group-hover:py-3 duration-500 flex flex-col items-end mdm:items-start mdm:justify-evenly  mdm:absolute text-sm bg-white min-w-[150px] shadow-md ">
+                <li className="hover:text-addispink py-1 my-1">
                   <Link to="pos-service">POS Service</Link>
                 </li>
-                <li className="hover:text-addispink">
+                <li className="hover:text-addispink py-1 my-1">
                   <Link to="erp-service">ERP Service</Link>
                 </li>
-                <li className="hover:text-addispink">
+                <li className="hover:text-addispink py-1 my-1">
                   <Link to="electronic-invoice">Electronic Invoice</Link>
                 </li>
-                <li className="hover:text-addispink">
+                <li className="hover:text-addispink py-1 my-1">
                   <Link to="business-intelligence">Business Intelligence</Link>
                 </li>
               </ul>
@@ -101,7 +102,7 @@ const NavBar = () => {
                 <FaChevronDown />
               </span>
             </span>{" "}
-            <ul className="hidden group-hover:flex flex-col items-end mdm:items-start gap-y-1 mdm:absolute text-sm bg-white min-w-[150px] p-3 shadow-md">
+            <ul className="h-0 pb-0 px-3 overflow-hidden rounded-b-md group-hover:h-32 group-hover:py-3 duration-500 flex flex-col items-end mdm:items-start justify-evenly mdm:absolute text-sm bg-white min-w-[150px] shadow-md">
               <li className="hover:text-addispink">
                 <Link to="user-guide">User Guide</Link>
               </li>
@@ -121,10 +122,11 @@ const NavBar = () => {
                   <FaChevronDown />
                 </span>
               </span>{" "}
-              <ul className="hidden group-hover:flex flex-col gap-1 mdm:absolute text-sm bg-white mdm:min-w-[80px] p-3 shadow-md right-0">
+              <ul className="h-0 px-4 overflow-hidden group-hover:h-16 rounded-b-md group-hover:pt-3 flex flex-col items-end duration-500 mdm:absolute text-sm bg-white mdm:min-w-[90px] shadow-md right-0">
                 <li className="hover:text-addispink float-right cursor-pointer">
                   Amh
                 </li>
+                <hr className="my-0.5" />
                 <li className="hover:text-addispink float-right cursor-pointer">
                   Oro
                 </li>
@@ -168,11 +170,12 @@ const NavBar = () => {
                   <FaChevronDown />
                 </span>
               </span>{" "}
-              <ul className="hidden group-hover:flex flex-col gap-y-1 absolute text-sm bg-white mdm:min-w-[50px] p-3 shadow-md right-0">
+              <ul className="h-0 px-2 overflow-hidden group-hover:h-16 rounded-b-md group-hover:pt-3 flex flex-col duration-300 absolute text-sm bg-white mdm:min-w-[30px] shadow-md -right-1">
                 <li className="hover:text-addispink float-right cursor-pointer">
                   Amh
                 </li>
-                <li className="hover:text-addispink float-right cursor-pointer">
+                <hr className="my-0.5" />
+                <li className="hover:text-addispink float-right cursor-pointer mb-3">
                   Oro
                 </li>
               </ul>
