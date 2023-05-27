@@ -42,7 +42,9 @@ const Footer = () => {
           <li className="font-light text-base hover:text-addispink duration-300 w-fit">
             <Link to="erp-service">ERP service</Link>
           </li>
-          <h4 className="font-semibold text-base">Working Hours</h4>
+          <h4 className="font-semibold  text-addispink text-base">
+            Working Hours
+          </h4>
           <li className=" font-light text-base hover:text-addispink duration-300 w-fit">
             Monday - Friday
           </li>

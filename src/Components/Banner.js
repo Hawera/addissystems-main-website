@@ -8,6 +8,7 @@ const Banner = ({ header, subtitle, bannerImage }) => {
         background: `linear-gradient(90deg, rgba(69, 66, 98, 1), rgba(69, 66, 98, 0.5)), url('${bannerImage}')`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className=" max-w-7xl mx-auto h-48 sm:h-72 flex items-center justify-center sm:justify-start px-4 text-center sm:text-left">

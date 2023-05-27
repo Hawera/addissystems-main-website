@@ -5,6 +5,7 @@ import aboutImg from "../image/1x/about-us_1.png";
 import Moto from "../Components/Moto";
 import Sponsors from "../Components/Sponsors";
 import aboutImage from "../image/about-us.jpg";
+import Heading from "../Components/Heading";
 
 const About = () => {
   return (
@@ -14,8 +15,13 @@ const About = () => {
         header={"About us"}
         subtitle={"Solve all your digital transaction needs."}
       />
+      <Heading
+        head={"Who "}
+        headtwo={"we are"}
+        para={"learn little about us"}
+      />
       <div className=" max-w-5xl mx-auto ">
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-5 mt-10 md:mt-24 mb-12">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-5 mt-10 md:mt-16 mb-12">
           <div className="w-[90%] md:w-1/2 max-w-[450px]">
             <img
               className=" w-full"

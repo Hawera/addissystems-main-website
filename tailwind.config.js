@@ -12,6 +12,11 @@ module.exports = {
         white: "#ffffff",
         addisbg: "#454262",
         addishover: "#F60B65",
+        gradientdark: "rgba(69, 66, 98, 1)",
+        gradientlight: "rgba(69, 66, 98, 0.5)",
+        gradientlightmobile: "rgba(69, 66, 98, 0.8)",
+        addisgradient1: "rgba(45, 38, 111, 0.9)",
+        addisgradient2: "rgba(215, 26, 98, 0.3)",
       },
       screens: {
         ssm: "440px",

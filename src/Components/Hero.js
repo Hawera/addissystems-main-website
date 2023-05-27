@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import heroImage from "../image/hero-image.png";
 import Button from "./Button";
+import ButtonChevron from "./ButtonChevron";
 
 const Hero = () => {
   return (
@@ -10,21 +11,15 @@ const Hero = () => {
         <div className=" w-full md:w-1/2 text-center md:text-left  border-addispink px-8 md:px-0 sm:px-24">
           <h1 className=" text-white text-2xl md:text-4xl font-semibold uppercase">
             Facilitating <br className="heading-break hidden " />{" "}
-            <span className="text-addispink font-bol">e-commerce</span> in
+            <span className="text-addispink font-bold">e-commerce</span> in
             Ethiopia and beyond.
           </h1>
           <p className="text-slate-300">
             Solve All Your Digital Transaction Needs
           </p>
           <div className=" mt-7 sm:mb-12 md:mb-0">
-            <Link to="demo-request">
-              <Button
-                text="Demo Request"
-                py={12}
-                width={210}
-                bgHover={"hover:bg-white"}
-                textHover={"addispink"}
-              />
+            <Link to="demo-request" className="inline-block">
+              <ButtonChevron text="Demo Request" py={14} px={30} />
             </Link>
           </div>
         </div>

@@ -116,7 +116,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Heading head={"We are"} headtwo={"located"} />
+      <Heading head={"We are"} headtwo={"located at"} />
       <div className=" bg-slate-100">
         <iframe
           title="google map"

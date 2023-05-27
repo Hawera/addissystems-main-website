@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./Button";
+import { logDOM } from "@testing-library/react";
 
 const MainService = ({ heading, title, paragraph, btntext, heroImage }) => {
+  const navigate = useNavigate();
+  const func = () => {
+    navigate("demo-request");
+    console.log("Done");
+  };
   return (
     <main className="">
       <header className=" bg-[#454262] px-4">
@@ -14,7 +20,7 @@ const MainService = ({ heading, title, paragraph, btntext, heroImage }) => {
             <p className="text-slate-300">{title}</p>
             <p className="text-slate-200 font-light mt-4">{paragraph}</p>
             <div className=" mt-7 sm:mb-12 md:mb-0 hidden md:block">
-              <Link to="demo-request">
+              <Link onClick={() => func()}>
                 <Button
                   text={"Demo request"}
                   py={12}

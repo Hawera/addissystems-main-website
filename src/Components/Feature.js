@@ -3,8 +3,8 @@ import React from "react";
 const Feature = ({ feature }) => {
   return (
     <div className=" bg-slate-100 max-w-[330px] flex flex-col items-center p-4 pl-4 sm:p-6">
-      <div className=" w-10 h-10 bg-addispink ">
-        {/* <img src="" alt="" /> */}
+      <div className=" w-10 h-10 overflow-hidden text-addispink text-4xl flex items-center justify-center">
+        {feature.icon}
       </div>
       <h2 className=" text-base font-medium sm:text-lg mt-4 mb-2 ">
         {feature.title}

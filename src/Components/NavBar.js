@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaCaretDown } from "react-icons/fa";
+import { FaCaretDown, FaChevronDown } from "react-icons/fa";
 import { CgMenu, CgClose } from "react-icons/cg";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiChevronDown } from "react-icons/fi";
 import logo from "../image/addissystems-logo.png";
 import icon from "../image/android-chrome-192x192.png";
 import Button from "./Button";
@@ -64,8 +64,8 @@ const NavBar = () => {
                 {" "}
                 <span className="flex items-center group-hover:text-addispink">
                   Solution{" "}
-                  <span className="text-sm group-hover:-rotate-180 duration-500">
-                    <FaCaretDown />
+                  <span className="text-xs origin-center group-hover:-rotate-180 duration-500">
+                    <FaChevronDown />
                   </span>
                 </span>{" "}
               </Link>
@@ -75,6 +75,12 @@ const NavBar = () => {
                 </li>
                 <li className="hover:text-addispink">
                   <Link to="erp-service">ERP Service</Link>
+                </li>
+                <li className="hover:text-addispink">
+                  <Link to="electronic-invoice">Electronic Invoice</Link>
+                </li>
+                <li className="hover:text-addispink">
+                  <Link to="business-intelligence">Business Intelligence</Link>
                 </li>
               </ul>
             </div>
@@ -91,8 +97,8 @@ const NavBar = () => {
           <li className="group  flex items-end flex-col mdm:block">
             <span className=" flex items-center group-hover:text-addispink">
               More Info{" "}
-              <span className="text-sm group-hover:-rotate-180 duration-500">
-                <FaCaretDown />
+              <span className="text-xs group-hover:-rotate-180 duration-500">
+                <FaChevronDown />
               </span>
             </span>{" "}
             <ul className="hidden group-hover:flex flex-col items-end mdm:items-start gap-y-1 mdm:absolute text-sm bg-white min-w-[150px] p-3 shadow-md">
@@ -112,11 +118,16 @@ const NavBar = () => {
               <span className=" text-xs flex items-center hover:text-addispink">
                 Eng{" "}
                 <span className="text-xs group-hover:-rotate-180 duration-500 ">
-                  <FaCaretDown />
+                  <FaChevronDown />
                 </span>
               </span>{" "}
-              <ul className="hidden group-hover:block mdm:absolute text-sm bg-white mdm:min-w-[80px] p-3 shadow-md right-0">
-                <li className="hover:text-addispink float-right">Amharic</li>
+              <ul className="hidden group-hover:flex flex-col gap-1 mdm:absolute text-sm bg-white mdm:min-w-[80px] p-3 shadow-md right-0">
+                <li className="hover:text-addispink float-right cursor-pointer">
+                  Amh
+                </li>
+                <li className="hover:text-addispink float-right cursor-pointer">
+                  Oro
+                </li>
               </ul>
             </li>
             <a href="https://admin.addissystems.et/">
@@ -153,13 +164,16 @@ const NavBar = () => {
             <div className="relative group">
               <span className=" text-xs flex items-center hover:text-addispink">
                 Eng{" "}
-                <span className="text-xs group-hover:-rotate-180 duration-500 ">
-                  <FaCaretDown />
+                <span className="text-[10px] group-hover:-rotate-180 duration-500 ">
+                  <FaChevronDown />
                 </span>
               </span>{" "}
-              <ul className="hidden group-hover:block absolute text-sm bg-white mdm:min-w-[80px] p-3 shadow-md right-0">
+              <ul className="hidden group-hover:flex flex-col gap-y-1 absolute text-sm bg-white mdm:min-w-[50px] p-3 shadow-md right-0">
                 <li className="hover:text-addispink float-right cursor-pointer">
-                  Amharic
+                  Amh
+                </li>
+                <li className="hover:text-addispink float-right cursor-pointer">
+                  Oro
                 </li>
               </ul>
             </div>
