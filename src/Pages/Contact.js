@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { ImLocation2 } from "react-icons/im";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -11,6 +13,12 @@ import bannerImage from "../image/contact-us.jpg";
 import Sponsors from "../Components/Sponsors";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      // offset: 50,
+    });
+  }, []);
   return (
     <main className=" relative">
       <Banner
@@ -18,13 +26,18 @@ const Contact = () => {
         header={"Contact us"}
         subtitle={"Solve All Your Digital Transaction Needs."}
       />
-      <Heading
-        head={"Get in Contact"}
-        headtwo={"with us"}
-        para={"we will get back to you as soon as possible"}
-      />
+      <div data-aos="fade-left" data-aos-delay="100">
+        <Heading
+          head={"Get in Contact"}
+          headtwo={"with us"}
+          para={"we will get back to you as soon as possible"}
+        />
+      </div>
       <div className=" max-w-7xl mx-auto flex flex-col items-center md:flex-row md:items-stretch justify-center px-1 ssm:px-4  sm:px-1 gap-4 mb-10 ">
-        <div className="contact-container w-full max-w-[500px] bg-slate-200 px-2 sm:px-8 py-6 ">
+        <div
+          data-aos="fade-right"
+          className="contact-container w-full max-w-[500px] bg-slate-200 px-2 sm:px-8 py-6 "
+        >
           <div className=" w-full max-w-md">
             <div className=" mb-6 ">
               <h3 className=" text-2xl font-semibold">Contact</h3>
@@ -78,7 +91,10 @@ const Contact = () => {
         </div>
 
         {/* Form Section  */}
-        <div className="email-us-conatiner w-full max-w-[500px] bg-slate-200 px-2 sm:px-8 py-6 ">
+        <div
+          data-aos="fade-left"
+          className="email-us-conatiner w-full max-w-[500px] bg-slate-200 px-2 sm:px-8 py-6 "
+        >
           <h3 className=" text-2xl font-semibold mb-6">Email us</h3>
           <form className=" flex flex-col gap-y-3">
             <input
@@ -123,7 +139,10 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Heading head={"We are"} headtwo={"located at"} />
+
+      <div data-aos="fade-up" data-aos-delay="100">
+        <Heading head={"We are"} headtwo={"located at"} />
+      </div>
       <div className=" bg-slate-100">
         <iframe
           title="google map"

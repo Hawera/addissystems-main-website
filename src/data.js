@@ -20,30 +20,35 @@ export const features = {
     description: "",
     feature: [
       {
+        delay: 1,
         title: "Enhance your customer service",
         paragraph:
           "Automate time-consuming procedures, avoid manual entry that is prone to error, and quickly spot and correct problems to keep business operations operating smoothly and customers satisfied.",
         icon: <HiOutlineEmojiHappy />,
       },
       {
+        delay: 2,
         title: "Lower Cost",
         paragraph:
           "To save time and money, eliminate manual paper-based operations, connect to all trading partners, and share information in any format through a single connection.",
         icon: <FaMoneyBillWave />,
       },
       {
+        delay: 3,
         title: "Cooperate to grow more quickly",
         paragraph:
           "Use the industry-leading B2B/ERP Service integration to stay competitive, connect with partners fast, and satisfy buyer and vendor connectivity needs.",
         icon: <MdGroups2 />,
       },
       {
+        delay: 4,
         title: "Boost business performance",
         paragraph:
           "With automated supply chain document flows that lighten workloads, businesses may become more agile and speed their time to revenue.",
         icon: <SiSpeedtest />,
       },
       {
+        delay: 5,
         title: "Create a future-proof digital infrastructure",
         paragraph:
           "Digitize all information flows to promote corporate expansion and boost resilience against potential business interruptions.",
@@ -55,48 +60,56 @@ export const features = {
     description: "",
     feature: [
       {
+        delay: 1,
         title: "Cost Reduction",
         paragraph:
           "E-invoicing has significant benefits for developing countries like Ethiopia.",
         icon: <GiMoneyStack />,
       },
       {
+        delay: 2,
         title: "Automation",
         paragraph:
           "E-invoicing can help automate the invoicing process, making it faster and more efficient. This can help businesses save time and money.",
         icon: <VscServerProcess />,
       },
       {
+        delay: 3,
         title: "Shorter Payment Cycles",
         paragraph:
           "E-invoicing can help shorten payment cycles by making it easier for businesses to track and process invoices. This can help businesses to pay faster and improve their cash flow.",
         icon: <BiTime />,
       },
       {
+        delay: 4,
         title: "Improved Reconciliation",
         paragraph:
           "E-invoicing can help improve account reconciliation by making it easier for businesses to match invoices with payments. This can help reduce errors and improve accuracy.",
         icon: <AiOutlineReconciliation />,
       },
       {
+        delay: 5,
         title: "Enhanced Compliance",
         paragraph:
           "E-invoicing can help enhance compliance by making it easier for businesses to comply with tax and regulatory requirements. This can help businesses avoid penalties and fines.",
         icon: <TbFileInvoice />,
       },
       {
+        delay: 6,
         title: "Prevention of Errors, Losses, and Frauds",
         paragraph:
           "E-invoicing can help prevent errors, losses, and fraud by providing businesses with a more secure and reliable invoicing system. This can help businesses avoid financial losses and reputational damage.",
         icon: <BiErrorAlt />,
       },
       {
+        delay: 7,
         title: "Improved Supplier-Customer Relationship",
         paragraph:
           "E-invoicing can help improve the relationship between suppliers and customers by providing a more efficient and transparent invoicing process. This can help businesses build trust and loyalty with their customers.",
         icon: <GiDuality />,
       },
       {
+        delay: 8,
         title: "Environmental benefit",
         paragraph:
           "E-invoicing can help reduce the carbon footprint by eliminating the need for paper invoices, printing, and postage. This can help businesses reduce their environmental impact.",
@@ -108,30 +121,35 @@ export const features = {
     description: "",
     featureToAuthor: [
       {
+        delay: 1,
         title: "Transforms tax compliance",
         paragraph:
           "BI services can helps tax authority to identify non-compliant taxpayers and take appropriate action.",
         icon: <BsReceipt />,
       },
       {
+        delay: 2,
         title: "Increased revenue",
         paragraph:
           "BI services can help tax authorities to identify areas of tax evasion and increase revenue collection.",
         icon: <GiReceiveMoney />,
       },
       {
+        delay: 3,
         title: "Better resource allocation",
         paragraph:
           "BI services can help tax authorities to allocate resources more effectively by identifying areas of high risk or non-compliance.",
         icon: <AiOutlineAreaChart />,
       },
       {
+        delay: 4,
         title: "Improved decision making",
         paragraph:
           "BI services can provide tax authorities with valuable insights into tax compliance and revenue collection, enabling them to make more informed decisions.",
         icon: <SlDirection />,
       },
       {
+        delay: 5,
         title: "Enhanced data security",
         paragraph:
           "BI services can help tax authorities to secure sensitive taxpayer data and prevent unauthorized access.",
@@ -140,30 +158,35 @@ export const features = {
     ],
     featureToBusinessCommunity: [
       {
+        delay: 1,
         title: "Enhanced operational efficiency",
         paragraph:
           "Business Intelligence helps businesses identify their weak links in their operations and optimize processes to improve efficiency.",
         icon: <MdEnhancedEncryption />,
       },
       {
+        delay: 2,
         title: "Informed decision making",
         paragraph:
           "Business Intelligence can provide businesses with valuable insights into their operations, enabling them to make more informed decisions.",
         icon: <SlDirections />,
       },
       {
+        delay: 3,
         title: "Increased revenue",
         paragraph:
           "BI helps businesses to identify new revenue sources and indicate new line of opportunities for growth.",
         icon: <GiUpgrade />,
       },
       {
+        delay: 4,
         title: "Enhanced customer satisfaction",
         paragraph:
           "BI can help businesses to carefully analyze plethora of customer data and improve customer engagement and satisfaction.",
         icon: <MdOutlineSentimentVerySatisfied />,
       },
       {
+        delay: 5,
         title: "Competitive advantage",
         paragraph:
           "BI can helps businesses to gain a competitive advantage by providing them with insights into market trends and customer behavior.",

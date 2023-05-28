@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "../Components/Banner";
 import Heading from "../Components/Heading";
 import FaqList from "../Components/FaqList";
-import Button from "../Components/Button";
 import { faqs } from "../data";
 import faqbanner from "../image/faq-banner-01-01.jpg";
 import LearnMore from "../Components/LearnMore";

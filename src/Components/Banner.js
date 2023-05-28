@@ -1,4 +1,6 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Banner = ({ header, subtitle, bannerImage }) => {
   return (
@@ -13,10 +15,15 @@ const Banner = ({ header, subtitle, bannerImage }) => {
     >
       <div className=" max-w-7xl mx-auto h-48 sm:h-72 flex items-center justify-center sm:justify-start px-4 text-center sm:text-left">
         <div className="">
-          <h1 className=" text-3xl text-white sm:text-5xl font-semibold">
+          <h1
+            data-aos="fade-down"
+            className=" text-3xl text-white sm:text-5xl font-semibold"
+          >
             {header}
           </h1>
-          <p className=" text-slate-300">{subtitle}</p>
+          <p data-aos="fade-up" className=" text-slate-300">
+            {subtitle}
+          </p>
         </div>
       </div>
     </header>

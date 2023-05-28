@@ -1,18 +1,27 @@
 import React from "react";
-import asset1 from "../image/1x/Asset 1.png";
-import asset2 from "../image/1x/Asset 2.png";
-import asset3 from "../image/1x/Asset 3.png";
-import asset4 from "../image/1x/Asset 4.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+// import asset1 from "../image/1x/Asset 1.png";
+// import asset2 from "../image/1x/Asset 2.png";
+// import asset3 from "../image/1x/Asset 3.png";
+// import asset4 from "../image/1x/Asset 4.png";
 
 const Moto = () => {
   return (
     <div className="w-full bg-[#454262] my-14 pt-12 mmd:py-0">
       <div className="relative max-w-7xl mx-auto flex flex-col  mmd:flex-row min-h-80 h-96 ssm:max-h-80 items-center sm:items-start mmd:items-center px-2 lg:px-0">
         <div className=" max-w-[400px] text-center sm:text-left">
-          <h2 className=" text-white text-3xl md:text-4xl font-semibold">
+          <h2
+            data-aos="fade-up"
+            className=" text-white text-3xl md:text-4xl font-semibold"
+          >
             Facilitating e-commerce in Ethiopia and beyond.
           </h2>
-          <p className=" text-slate-300">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="150"
+            className=" text-slate-300"
+          >
             Lorem ipsum dolor sit amet consectetur. Pharetra neque vitae pretium
             pharetra vel dolor facilisis netus. Facilisi phasellus magnis
             tristique egestas.

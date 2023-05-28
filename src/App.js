@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Pages/Home";
@@ -18,6 +20,12 @@ import Submitted from "./Pages/Submitted";
 import { features } from "./data";
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      // offset: 50,
+    });
+  }, []);
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -89,9 +97,8 @@ function App() {
         <Route path="user-guide" element={<UserGuide />} />
         <Route path="faq" element={<Faq />} />
         <Route path="help" element={<Help />} />
-        <Route exact path="demo-request" element={<DemoRequest />}>
-          <Route exact path="submitted" element={<Submitted />} />
-        </Route>
+        <Route path="demo-request" element={<DemoRequest />} />
+        <Route path="demo-request/submitted" element={<Submitted />} />
       </Route>
     </Routes>
   );

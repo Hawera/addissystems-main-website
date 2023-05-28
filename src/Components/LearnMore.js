@@ -5,7 +5,7 @@ import ButtonChevron from "./ButtonChevron";
 
 const LearnMore = () => {
   return (
-    <>
+    <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="100">
       <Heading
         head="Learn More About"
         headtwo={"AddisSystems?"}
@@ -16,7 +16,7 @@ const LearnMore = () => {
           <ButtonChevron text="Contact us" py={10} px={28} />
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

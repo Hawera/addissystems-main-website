@@ -7,7 +7,7 @@ const FaqList = ({ faqData, handleSlide }) => {
   // answer.style.overflow = "hidden";
 
   const faqItems = faqData.map((faq) => (
-    <div key={faq.id}>
+    <div data-aos="fade-up" data-aos-offset="100" key={faq.id}>
       <div className=" w-full py-4 bg-addispink mt-10 mb-4">
         <h4 className=" text-center text-lg font-medium text-white ">
           {faq.catagory}

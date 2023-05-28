@@ -7,9 +7,9 @@ const Layout = () => {
   return (
     <>
       <NavBar />
-      <div className=" min-h-[900px]">
-        <Outlet />
-      </div>
+      {/* <div className=" min-h-[900px]"> */}
+      <Outlet />
+      {/* </div> */}
       <Footer />
     </>
   );

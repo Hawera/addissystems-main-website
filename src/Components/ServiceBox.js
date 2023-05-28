@@ -15,8 +15,8 @@ const ServiceBox = ({
   icon2,
 }) => {
   return (
-    <div className=" w-[96%] md:w-1/2 card-container bg-slate-200 max-w-[480px] px-3 sm:px-7 pt-7 pb-4">
-      <h3 className=" text-2xl font-medium">{head}</h3>
+    <div className=" bg-addispink border-l-4 rounded-xl border-addisblue bg-opacity-5 px-3 sm:px-7 py-6 ">
+      <h3 className=" text-addisblue text-2xl font-semibold">{head}</h3>
       <p className="">{title}</p>
       <div className=" my-6 grid gap-y-4">
         <div className=" flex items-start">

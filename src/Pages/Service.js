@@ -1,4 +1,6 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import { features } from "../data";
 import MainService from "../Components/MainService";
@@ -24,6 +26,7 @@ const Service = ({
   featureData2,
   bannerImage,
 }) => {
+  // Function to change banner image depending on the title
   const imageHandler = (heading) => {
     switch (heading) {
       case "POS Service":
@@ -66,11 +69,18 @@ const Service = ({
             }}
           ></div>
           <div className=" z-10">
-            <h1 className=" text-3xl text-white sm:text-5xl font-semibold">
+            <h1
+              data-aos="fade-down"
+              className=" text-3xl text-white sm:text-5xl font-semibold"
+            >
               {heading}
             </h1>
-            <p className=" text-slate-300 mb-4">{title}</p>
-            <ButtonChevron text={"Demo request"} />
+            <p data-aos="fade-down" className=" text-slate-300 mb-4">
+              {title}
+            </p>
+            <div data-aos="fade-up">
+              <ButtonChevron text={"Demo request"} />
+            </div>
           </div>
         </div>
       </header>
@@ -84,7 +94,10 @@ const Service = ({
 
       {/* Body Title with Color  */}
       <div className="text-center my-12 max-w-7xl mx-auto px-4 lg:px-32 md:px-20 sm:px-8 ">
-        <h1 className=" text-2xl sm:text-3xl uppercase font-medium">
+        <h1
+          data-aos="fade"
+          className=" text-2xl sm:text-3xl uppercase font-medium"
+        >
           ADDIS{" "}
           <span className="text-addispink">
             {heading.includes("Service")
@@ -96,14 +109,18 @@ const Service = ({
         </h1>
         <div className=" border-b-4 w-32 mx-auto my-4 border-addispink rounded-full" />
         <section className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-x-4 lg:gap-x-10 ">
-          <div className="w-[90%] md:w-1/2 max-w-[550px] ">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="150"
+            className="w-[90%] md:w-1/2 max-w-[550px] "
+          >
             <img
               className=" h-full max-h-[450px] "
               src={imageHandler(heading)}
               alt="pos service illustration"
             />
           </div>
-          <div className="w-[90%] md:w-1/2 max-w-[550px]">
+          <div data-aos="fade-left" className="w-[90%] md:w-1/2 max-w-[550px]">
             <p className="text-sm md:text-base text-justify indent-8 ">
               {paragraph}
             </p>

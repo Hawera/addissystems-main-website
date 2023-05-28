@@ -21,7 +21,7 @@ const NavBar = () => {
     } else {
       setSearchOpen(true);
       screenWidth <= 550
-        ? (searchInput.style.width = "150px")
+        ? (searchInput.style.width = "190px")
         : (searchInput.style.width = "200px");
     }
   };
@@ -60,16 +60,12 @@ const NavBar = () => {
           </li>
           <li className="">
             <div className="group flex flex-col items-end mdm:block transition-all duration-500 ">
-              <Link to="">
-                {" "}
-                <span className="flex items-center group-hover:text-addispink">
-                  Solution{" "}
-                  <span className="text-xs origin-center group-hover:-rotate-180 duration-500">
-                    <FaChevronDown />
-                  </span>
-                </span>{" "}
-              </Link>
-
+              <span className="flex items-center group-hover:text-addispink cursor-pointer">
+                Solution{" "}
+                <span className="text-xs origin-center group-hover:-rotate-180 duration-500">
+                  <FaChevronDown />
+                </span>
+              </span>
               <ul className="h-0 px-3 overflow-hidden rounded-b-md group-hover:h-40 group-hover:py-3 duration-500 flex flex-col items-end mdm:items-start mdm:justify-evenly  mdm:absolute text-sm bg-white min-w-[150px] shadow-md ">
                 <li className="hover:text-addispink py-1 my-1">
                   <Link to="pos-service">POS Service</Link>
@@ -104,13 +100,13 @@ const NavBar = () => {
             </span>{" "}
             <ul className="h-0 pb-0 px-3 overflow-hidden rounded-b-md group-hover:h-32 group-hover:py-3 duration-500 flex flex-col items-end mdm:items-start justify-evenly mdm:absolute text-sm bg-white min-w-[150px] shadow-md">
               <li className="hover:text-addispink">
-                <Link to="user-guide">User Guide</Link>
+                <Link to="">User Guide</Link>
               </li>
               <li className="hover:text-addispink">
                 <Link to="faq">FAQs</Link>
               </li>
               <li className="hover:text-addispink">
-                <Link to="help">Help</Link>
+                <Link to="">Help</Link>
               </li>
             </ul>
           </li>

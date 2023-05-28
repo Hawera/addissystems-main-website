@@ -11,7 +11,7 @@ const ButtonChevron = ({ text, width, px, py }) => {
       }}
     >
       {text}{" "}
-      <HiChevronRight className="mt-1 invisible opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-2 group-hover:visible group-hover:scale-125 duration-500 text-xl " />
+      <HiChevronRight className="mt-1 group-hover:opacity-100  group-hover:translate-x-2 group-hover:visible group-hover:scale-125 duration-500 text-xl " />
     </button>
   );
 };
